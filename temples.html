@@ -1,0 +1,398 @@
+<html>
+  <head>
+    <title>TEMPLES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <style>
+   
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+  max-height:150%;
+}
+.text { 
+  font-size: 20px;
+  padding-left:20px;
+}
+.a{
+  width: 1100px;
+  height: auto;
+}
+.b{
+  width: 820px;
+  height: auto;
+}
+.c{
+  width: 1100px;
+  height: auto;
+}
+.d{
+  width: 900px;
+  height: auto;
+}
+.e{
+  width: 920px;
+  height: auto;
+}
+
+  .color1{
+    color:orange;
+  }
+  .color2{
+    color: rgb(172, 172, 36);
+  }
+  .color3{
+    color: rgb(20, 20, 238);
+  }
+  .color4{
+    color:goldenrod;
+  }
+  .color5{
+    color: rgb(158, 8, 8);
+  }
+  .text1{
+    color: brown;
+  }  
+  .h{
+    color:purple ;
+  }
+ #likeButton1 {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+
+#likeButton1:hover {
+  background-color: #f5f5f5;
+}
+
+#heartSymbol1 {
+  color: black;
+  margin-right: 5px;
+
+}
+
+
+#likeButton1.liked {
+  background-color: red;
+  color: white;
+}
+
+#likeButton1.liked #heartSymbol1 {
+  color: white;
+
+}
+
+#likeButton2{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+
+#likeButton2:hover {
+  background-color: #f5f5f5;
+}
+
+#heartSymbol2 {
+  color: black;
+  margin-right: 5px;
+
+}
+
+
+#likeButton2.liked {
+  background-color: red;
+  color: white;
+}
+
+#likeButton2.liked #heartSymbol2 {
+  color: white;
+
+}
+#likeButton3{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+
+#likeButton3:hover {
+  background-color: #f5f5f5;
+}
+
+#heartSymbol3 {
+  color: black;
+  margin-right: 5px;
+
+}
+
+
+#likeButton3.liked {
+  background-color: red;
+  color: white;
+}
+
+#likeButton3.liked #heartSymbol3{
+  color: white;
+
+}  
+
+#likeButton4{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+
+#likeButton4:hover {
+  background-color: #f5f5f5;
+}
+
+#heartSymbol4{
+  color: black;
+  margin-right: 5px;
+
+}
+
+
+#likeButton4.liked {
+  background-color: red;
+  color: white;
+}
+
+#likeButton4.liked #heartSymbol4{
+  color: white;
+
+}   
+
+#likeButton5{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+
+#likeButton5:hover {
+  background-color: #f5f5f5;
+}
+
+#heartSymbol5 {
+  color: black;
+  margin-right: 5px;
+
+}
+
+
+#likeButton5.liked {
+  background-color: red;
+  color: white;
+}
+
+#likeButton5.liked #heartSymbol5{
+  color: white;
+
+}    
+ </style>
+  <body >
+      <div class="container">
+      <form method="POST" action="/temples">
+      <div class="image">
+      <div class="text"><h2 class="color1">1.AYODHYA</h2></div>
+      <div class="image-container">
+        <input type="hidden" name="imgname" value="Ayodhya">
+    <img  class="a" src="https://www.fabhotels.com/blog/wp-content/uploads/2024/01/e7237302-600x400-1.jpg">
+
+    <button id="likeButton1" type="submit" onclick="myalert()">
+      <span id="heartSymbol1">&#10084;</span> Like
+    </button>
+    <div id="message1"></div>
+      </div>
+    </form>  
+    </div>
+    <div class="text">
+        <h3 class="h">JAI SHREE RAM</h3>
+        <P class="text1">Ayodhya is one of the most religious places in India. This is the birthplace of Lord Ram and hence, holds great spiritual significance among the devotees of the Hindu religion. 
+          This holy city is situated in Uttar Pradesh. 
+          Ayodhya used to be called Saketa in ancient times and was the capital city of the Kosala Kingdom.</p>
+        </div>
+       </div>
+         <div class="container">
+          <form method="POST" action="/temples">
+        <div class="image">
+         <div class="text"><h2 class="color2" >2.SHIRIDI</h2></div>
+         <div class="image-container1">
+          <input type="hidden" name="imgname" value="Shiridi">
+        <img  class="b"  src="https://www.trawell.in/admin/images/upload/288555461Namchi_Sa.jpg">
+        <button id="likeButton2" type="submit"  onclick="myalert()">
+          <span id="heartSymbol2">&#10084;</span> Like
+        </button>
+        <div id="message2"></div> 
+      </div>
+    </form>
+          </div>
+          <div class="text">
+         <h3  class="h">SAI BABA</h3>
+         <p class="text1">Shirdi is one of the most pious lands and a popular pilgrimage center in India. 
+          It features the highly famous holy shrine of Shirdi Sai Baba. 
+          This place is visited by thousands of devotees every single year to seek blessings from Sai Baba.</p>
+         </div>
+        </form>
+         </div>
+         <div class="container">
+          <form method="POST" action="/temples">
+           <div class="image">
+          <div class="text"><h2  class="color3">3.PURI</h2></div>
+          <div class="image-container2">
+            <input type="hidden" name="imgname" value="Puri">
+          <img class="c" src="https://www.templepurohit.com/wp-content/uploads/2015/11/Puri-Jagannath-Temple-Puri-Odisha.jpg">  
+          <button id="likeButton3" type="submit"  onclick="myalert()">
+            <span id="heartSymbol3">&#10084;</span> Like
+          </button>
+          <div id="message3"></div>  
+        </div>
+        </form>
+        </div>
+          <div class="text">
+         <h3 class="h">SHREE JAGGANATHA RATH</h3>
+         <p class="text1">Jagannath Temple in Puri, Odisha, is a revered temple where Lord Krishna is worshipped as Lord Jagannath. 
+          There are several unexplained mysteries associated with the temple, such as the direction of the flag, the wooden idols, 
+          absence of a shadow, the Mahaprasad served to Lord Jagannath, sound of waves, and more.</p>
+           </div>
+            </div>
+            <div class="container">
+              <form method="POST" action="/temples">
+          <div class="image">
+           <div class="text"><h2 class="color4">4.VIJAYAWADA</h2></div>
+           <div class="image-container3">
+            <input type="hidden" name="imgname" value="Vijayawada">
+          <img class="d"  src="https://www.templepurohit.com/wp-content/uploads/2015/08/Sri-Durga-malleswara-Swamy-Temple-Vijayawada.jpg">
+          <button id="likeButton4" type="submit"  onclick="myalert()">
+            <span id="heartSymbol4">&#10084;</span> Like
+          </button>
+          <div id="message4"></div>  
+        </div>
+      </form>
+        </div>
+            <div class="text">
+              <h3 class="h">JAI DURGA MATA</h3>
+              <p class="text1">The Durga temple is an early 8th-century Hindu temple located in Aihole, Karnataka, India. 
+                Originally dedicated to Surya, it has the most embellished and largest relief panels in Aihole depicting artwork of Shaivism,
+                Vaishnavism, Shaktism and Vedic deities.</p>
+              </div>
+               </div>
+              <div class="container">
+                <form method="POST" action="/temples">
+              <div class="image">
+        <div class="text"><h2  class="color5">5.VARANASI</h2></div>
+        <div class="image-container4">
+          <input type="hidden" name="imgname" value="Varanasi">
+        <img class="e" src="https://e1.pxfuel.com/desktop-wallpaper/165/642/desktop-wallpaper-ganga-aarti-at-haridwar-ganga-aarti.jpg">
+        <button id="likeButton5" type="submit" onclick="myalert()">
+          <span id="heartSymbol5">&#10084;</span> Like
+        </button>
+        <div id="message5"></div> 
+      </div>
+    </form>
+      </div>
+          <div class="text">
+       <h3 class="h">KASI VISHWANATH</h3>
+       <P class="text1">Kashi Vishvanath Temple is one of the most famous Hindu temples dedicated to Lord Shiva. It is located in Varanasi, Uttar Pradesh, India. 
+        The temple stands on the western bank of the holy river Ganga, and is one of the twelve Jyotirlingas, the holiest of Shivatemples.</P>
+            </div>
+             </div>
+             <div class="col-md-12 text-center">
+              <a href="/templestable" target="_blank">
+              <button type="button" class="btn btn-primary">More about temples</button></a></div>             
+<script>
+const likeButton1 = document.getElementById("likeButton1");
+const message1 = document.getElementById("message1");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton1.addEventListener("click", function() {
+  likeButton1.classList.toggle("liked");
+  if (likeButton1.classList.contains("liked")) {
+    message1.innerText = "Destination added to favourites!";
+  } else {
+    message1.innerText = "";
+  }
+});
+const likeButton2 = document.getElementById("likeButton2");
+const message2= document.getElementById("message2");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton2.addEventListener("click", function() {
+  likeButton2.classList.toggle("liked");
+  if (likeButton2.classList.contains("liked")) {
+    message2.innerText = "Destination added to favourites!";
+  } else {
+    message2.innerText = "";
+  }
+});
+const likeButton3 = document.getElementById("likeButton3");
+const message3= document.getElementById("message3");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton3.addEventListener("click", function() {
+  likeButton3.classList.toggle("liked");
+  if (likeButton3.classList.contains("liked")) {
+    message3.innerText = "Destination added to favourites!";
+  } else {
+    message3.innerText = "";
+  }
+});
+const likeButton4 = document.getElementById("likeButton4");
+const message4= document.getElementById("message4");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton4.addEventListener("click", function() {
+  likeButton4.classList.toggle("liked");
+  if (likeButton4.classList.contains("liked")) {
+    message4.innerText = "Destination added to favourites!";
+  } else {
+    message4.innerText = "";
+  }
+});
+const likeButton5 = document.getElementById("likeButton5");
+const message5= document.getElementById("message5");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton5.addEventListener("click", function() {
+  likeButton5.classList.toggle("liked");
+  if (likeButton5.classList.contains("liked")) {
+    message5.innerText = "Destination added to favourites!";
+  } else {
+    message5.innerText = "";
+  }
+});
+</script>
+</body>
+</html>
+

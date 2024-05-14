@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Home Page Title</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"> </head>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    </head>
+        <body>
+        <div class="bg"></div>
+    <div>
+        <header>
+    <nav>
+      <div class="e" >
+        <i class='bx bxs-home'></i><a href="/home2">Home</a>
+        <i class='bx bx-train'></i><a href="/destinations" target="_blank">Destinations</a>
+        <i class='bx bx-heart-circle'></i><a href="/favourites">Favourites</a>
+        <i class='bx bxs-user-pin'></i><a href="/about">About us</a>
+      </div>
+          <div class="container">
+  <button id="logoutBtn">Logout</button>
+</div>
+</nav>
+  </header>
+ <footer>
+    <p> <h1 class="b">DREAM DESTINATION </h1></p>
+    <p class="quote">One Life<br>
+    One World<br>
+  Explore It<i class='bx bx-run'></i></p> 
+  </footer>
+  </div>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+      margin-top: -15px;
+      margin-left: 1400px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;  
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+document.getElementById('logoutBtn').addEventListener('click', function() {
+  // Perform logout actions here, such as clearing session data, redirecting, etc.
+  // For demonstration, let's just redirect to a login page
+  window.location.href = 'login.html';
+});
+  </script>
+</body>
+</html>

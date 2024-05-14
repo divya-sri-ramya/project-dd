@@ -1,0 +1,358 @@
+<html>
+  <head>
+    <title>adventures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <style>
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.a{
+  width: 1100px;
+  height: auto;
+}
+.b{
+  width: 1100px;
+  height: auto;
+}
+.c{
+  width: 700px;
+  height: auto;
+}
+.d{
+  width: 1200px;
+  height: auto;
+}
+.image-container{
+  display: inline-block;
+}
+.image-container img{
+  display: inline-block ;
+  margin-right: 20px;
+}
+#likeButton1 {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+
+#likeButton1:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol1 {
+  color: black;
+  margin-right: 5px;
+}
+#likeButton1.liked {
+  background-color: red;
+  color: white;
+}
+#likeButton1.liked #heartSymbol1 {
+  color: white;
+}
+#likeButton2{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+#likeButton2:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol2 {
+  color: black;
+  margin-right: 5px;
+}
+#likeButton2.liked {
+  background-color: red;
+  color: white;
+}
+#likeButton2.liked #heartSymbol2 {
+  color: white;
+}
+#likeButton3{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+#likeButton3:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol3 {
+  color: black;
+  margin-right: 5px;
+}
+#likeButton3.liked {
+  background-color: red;
+  color: white;
+}
+#likeButton3.liked #heartSymbol3{
+  color: white;
+}  
+#likeButton4{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+#likeButton4:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol4{
+  color: black;
+  margin-right: 5px;
+}
+#likeButton4.liked {
+  background-color: red;
+  color: white;
+}
+#likeButton4.liked #heartSymbol4{
+  color: white;
+}   
+#likeButton5{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+#likeButton5:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol5 {
+  color: black;
+  margin-right: 5px;
+}
+#likeButton5.liked {
+  background-color: red;
+  color: white;
+}
+#likeButton5.liked #heartSymbol5{
+  color: white;
+} 
+.color1{
+    color:rgb(15, 67, 223);
+  }
+  .color2{
+    color: rgb(221, 6, 174);
+  }
+  .color3{
+    color: rgb(158, 158, 237);
+  }
+  .color4{
+    color:rgb(53, 72, 4);
+  }
+  .color5{
+    color: rgb(158, 8, 8);
+  }
+  .text1{
+    color: brown;
+  }  
+  .h{
+    color:purple ;
+  }
+ </style>
+  <body>
+    <div class="container">
+      <form method="POST" action="/adventures">
+    <div class="image">
+      <div class="text"><h2 class="color1">1.RUSHIKESH RIVER RAFTING</h2></div>
+      <div class="image-container">
+        <input type="hidden" name="imgname" value="Rushikesh River Drafting ">
+    <img class="b"  src="https://www.treksandtrails.org/system/images/000/505/572/ae722695fba0950a54b99232d1c323a4/original/Rishikesh-rafting.jpg?1649594343">
+     <div class="container1">
+    <button id="likeButton1"  type="submit" onclick="myalert()">
+      <span id="heartSymbol1">&#10084;</span> Like
+    </button>
+     </div>
+    <div id="message1"></div>
+      </div>
+    </form>
+    </div>
+    <div class="text">
+        <h3 class="h">UTTARAKHAND</h3>
+        <P class="text1">Rafting begins in the morning. The start is made with a stretch of 18 kms from Kaudiyala to Shivpuri. 
+          Experience enthralling rafting rapids like the Three Blind Mice, The Wall and Crossfire till Shivpuri. 
+          Enjoy the serene river-side scenery of Shivpuri before you drive back to Kaudiyala.</P>
+        </div>
+        </div>
+        <div class="container">
+          <form method="POST" action="/adventures">
+        <div class="image">
+         <div class="text"><h2 class="color2">2.PARAGLIDING</h2></div>
+         <div class="image-container1">
+          <input type="hidden" name="imgname" value="Paragliding">
+        <img  class="b"  src="https://media.istockphoto.com/id/1284592293/photo/paragliding.jpg?b=1&s=612x612&w=0&k=20&c=fewfS2JUROn0HUFRlQk2WxRYLVC4Hj4WktEEcFIX_ko=">
+        <button id="likeButton2" type="submit" onclick="myalert()">
+          <span id="heartSymbol2">&#10084;</span> Like
+        </button>
+        <div id="message2"></div>
+        </div>
+    </form>
+          </div>
+          <div class="text">
+         <h3 class="h">HIMALAYAS</h3>
+         <p class="text1"> Paragliding is a type of extreme sport found in the early 1980s by people interested in aerial sports,
+           and it allows one to run off the slopes with free parachutes. 
+          Paragliding is generally more accessible than other extreme sports since it does not require a special take off or a landing track..</p>
+         </div>
+         </div>
+         <div class="container">
+          <form method="POST" action="/adventures">
+           <div class="image">
+          <div class="text"><h2 class="color3">3.GULMARG SKI</h2></div>
+          <div class="image-container2">
+            <input type="hidden" name="imgname" value="Gulmarg ski">
+          <img class="c"   src="https://travelmykashmir.com/wp-content/uploads/2022/10/book_gondola_cable_car_gulmarg_jkcablecarcorporation_5-exif-remove.jpeg">
+          <button id="likeButton3" type="submit" onclick="myalert()">
+            <span id="heartSymbol3">&#10084;</span> Like
+          </button>
+          <div id="message3"></div>
+           </div>
+          </form>
+          </div>
+          <div class="text">
+         <h3 class="h">JAMMU & KASHMIR</h3>
+         <p class="text1">Gulmarg is the crowning glory of Jammu & Kashmir and is located 2,650 meters above sea level.
+           Known as the “Meadow of Flowers”, it boasts of the world's highest golf-course.</p>
+            </div>
+            </div>
+            <div class="container">
+              <form method="POST" action="/adventures">
+          <div class="image">
+           <div class="text"><h2 class="color4">4.TREKKING</h2></div>
+           <div class="image-container3">
+            <input type="hidden" name="imgname" value="Trekking">
+           <img class="d"   src="https://d26dp53kz39178.cloudfront.net/media/uploads/Location_Based_Travel_Guide_Images/image4_result-1658215758429.webp">
+           <button id="likeButton4" type="submit" onclick="myalert()">
+            <span id="heartSymbol4">&#10084;</span> Like
+          </button>
+          <div id="message4"></div>    
+      </div>
+    </form>
+            </div>
+            <div class="text">
+              <h3 class="h">MANALI</h3>
+              <p class="text1">All treks in Manali offer stunning views of the surrounding mountains and valleys, but if you're looking for the most scenic trek,
+                 the Hampta Pass Trek is an excellent choice. 
+                The trek takes you through lush green forests, meadows, and rocky terrains, offering breathtaking views of the Himalayan ranges.</p>
+              </div>
+               </div>
+              <div class="container">
+                <form method="POST" action="/adventures">
+              <div class="image">
+        <div class="text"><h2 class="color5">5.ARWAH CAVES</h2></div>
+        <div class="image-container4">
+          <input type="hidden" name="imgname" value="Arwah Caves">
+        <img class="a" src="https://www.fodors.com/wp-content/uploads/2019/04/05_IndiaAdventuresInMeghalaya__VisitingLesserKnownArwahCaves_5-shutterstock_1192623307.jpg">
+        <button id="likeButton5" type="submit" onclick="myalert()">
+          <span id="heartSymbol5">&#10084;</span> Like
+        </button>
+        <div id="message5"></div>   
+      </div>
+    </form>
+        </div>
+          <div class="text">
+       <h3 class="h">MEGHALAYA</h3>
+       <P class="text1">Arwah Cave is known for its fossil formations, limestone structures and stalagmite and stalactite 
+        formations which are believed to be millions of years old and are naturally carved.
+         It houses many narrow passages and chambers as well as a stream that flows inside the cave.</P>
+             </div>
+             </div> 
+              <div class="col-md-12 text-center">
+                <a href="/adventurestable" target="_blank">
+              <button type="button" class="btn btn-primary">More about adventures</button></a></div>
+              <script>
+              const likeButton1 = document.getElementById("likeButton1");
+const message1 = document.getElementById("message1");
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton1.addEventListener("click", function() {
+  likeButton1.classList.toggle("liked");
+  if (likeButton1.classList.contains("liked")) {
+    message1.innerText = "Destination added to favourites!";
+  } else {
+    message1.innerText = "";
+  }
+});
+const likeButton2 = document.getElementById("likeButton2");
+const message2= document.getElementById("message2");
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton2.addEventListener("click", function() {
+  likeButton2.classList.toggle("liked");
+  if (likeButton2.classList.contains("liked")) {
+    message2.innerText = "Destination added to favourites!";
+  } else {
+    message2.innerText = "";
+  }
+});
+const likeButton3 = document.getElementById("likeButton3");
+const message3= document.getElementById("message3");
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton3.addEventListener("click", function() {
+  likeButton3.classList.toggle("liked");
+  if (likeButton3.classList.contains("liked")) {
+    message3.innerText = "Destination added to favourites!";
+  } else {
+    message3.innerText = "";
+  }
+});
+const likeButton4 = document.getElementById("likeButton4");
+const message4= document.getElementById("message4");
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton4.addEventListener("click", function() {
+  likeButton4.classList.toggle("liked");
+  if (likeButton4.classList.contains("liked")) {
+    message4.innerText = "Destination added to favourites!";
+  } else {
+    message4.innerText = "";
+  }
+});
+const likeButton5 = document.getElementById("likeButton5");
+const message5= document.getElementById("message5");
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+likeButton5.addEventListener("click", function() {
+  likeButton5.classList.toggle("liked");
+  if (likeButton5.classList.contains("liked")) {
+    message5.innerText = "Destination added to favourites!";
+  } else {
+    message5.innerText = "";
+  }
+});
+ </script>   
+ </body>
+</html>

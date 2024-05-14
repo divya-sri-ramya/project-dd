@@ -1,0 +1,386 @@
+<html>
+  <head>
+    <title>waterfall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <style>
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+.a{
+  width: 900px;
+  height:300;
+}
+.b{
+  width: 950px;
+  height:300;
+}
+.c{
+  width: 940px;
+  height:300;
+}
+.d{
+  width: 1030px;
+  height:300;
+}
+.e{
+  width:1250px;
+  height:300;
+}
+
+.e{
+  width: 1250px;
+  height: 300px;
+}
+
+.color1{
+    color:rgb(65, 81, 228);
+  }
+  .color2{
+    color: rgb(14, 223, 45);
+  }
+  .color3{
+    color: rgb(9, 9, 149);
+  }
+  .color4{
+    color:rgb(3, 40, 24);
+  }
+  .color5{
+    color: rgb(158, 8, 8);
+  }
+  .text1{
+    color: brown;
+  }  
+  .h{
+    color:purple ;
+  } 
+#likeButton1 {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+#likeButton1:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol1 {
+  color: black;
+  margin-right: 5px;
+}
+#likeButton1.liked {
+  background-color: red;
+  color: white;
+}
+#likeButton1.liked #heartSymbol1 {
+  color: white;
+}
+#likeButton2{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+#likeButton2:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol2 {
+  color: black;
+  margin-right: 5px;
+}
+#likeButton2.liked {
+  background-color: red;
+  color: white;
+}
+#likeButton2.liked #heartSymbol2 {
+  color: white;
+}
+#likeButton3{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+#likeButton3:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol3 {
+  color: black;
+  margin-right: 5px;
+}
+#likeButton3.liked {
+  background-color: red;
+  color: white;
+}
+
+#likeButton3.liked #heartSymbol3{
+  color: white;
+
+}  
+
+#likeButton4{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+
+#likeButton4:hover {
+  background-color: #f5f5f5;
+}
+
+#heartSymbol4{
+  color: black;
+  margin-right: 5px;
+
+}
+
+
+#likeButton4.liked {
+  background-color: red;
+  color: white;
+}
+#likeButton4.liked #heartSymbol4{
+  color: white;
+
+}   
+
+#likeButton5{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3;
+  margin-left: 0;
+}
+
+#likeButton5:hover {
+  background-color: #f5f5f5;
+}
+#heartSymbol5 {
+  color: black;
+  margin-right: 5px;
+
+}
+
+
+#likeButton5.liked {
+  background-color: red;
+  color: white;
+}
+
+#likeButton5.liked #heartSymbol5{
+  color: white;
+
+}    
+  </style>
+  <body>
+    <div class="container">
+      <form method="POST" action="/waterfalls">
+    <div class="image">
+      <div class="text"><h2 class="color1">1.JOG FALL</h2></div>
+      <div class="image-container">
+        <input type="hidden" name="imgname" value="Jog fall">
+    <img class="a" src="https://i.pinimg.com/736x/63/87/2c/63872ce3ca1fbe8574de64a799df0b18.jpg">
+    <button id="likeButton1" type="submit" onclick="myalert()">
+      <span id="heartSymbol1">&#10084;</span> Like
+    </button>
+    <div id="message1"></div>
+      </div>
+    </form>
+    
+    </div>
+    <div class="text">
+        <h3 class="h">KARNATAKA</h3>
+        <P class="text1">Jog Falls is a waterfall on the Sharavati river located in Siddapur taluk, Uttara Kannada District and its view point
+           is located in Sagara taluk, 
+          Shimoga district of Karnataka, India. 
+          It is the second highest plunge waterfall in India.</P>
+        </div>
+        </div>
+        <div class="container">
+          <form method="POST" action="/waterfalls">
+        <div class="image">
+         <div class="text"><h2 class="color2">2.DUDHSAGAR FALL</h2></div>
+         <div class="image-container1">
+          <input type="hidden" name="imgname" value="Dudhsagar fall">
+        <img class="b"  src="https://imgmedia.lbb.in/media/2021/10/6165b8de6a9fc04e3f38c58c_1634056414914.jpg">
+        <button id="likeButton2" type="submit" onclick="myalert()">
+          <span id="heartSymbol2">&#10084;</span> Like
+        </button>
+        <div id="message2"></div>
+      </div>
+    </form>
+          </div>
+          <div class="text">
+         <h3 class="h">GOA</h3>
+         <p class="text1"> Dudhsagar Falls  is a four-tiered waterfall on the Mandovi River in the Indian state of Goa.
+           It is 60 km from Panaji by road and is located on the Belgaum–Vasco Da Gama rail route
+            about 46 km east of Madgaon and 80 km south of Belgaum.
+        </p>
+         </div>
+         </div>
+         <div class="container">
+          <form method="POST" action="/waterfalls">
+           <div class="image">
+          <div class="text"><h2 class="color3">3.KALLAR MEENMUTTY FALL</h2></div>
+          <div class="image-container2">
+            <input type="hidden" name="imgname" value="Kallar Meenmutty fall">
+          <img  class="c" src="https://pbs.twimg.com/media/E74GN0MVEAM8NNf.jpg:large">
+          <button id="likeButton3" type="submit" onclick="myalert()">
+            <span id="heartSymbol3">&#10084;</span> Like
+          </button>
+          <div id="message3"></div>
+      </div>
+    </form>
+          </div>
+          <div class="text">
+         <h3 class="h">KERALA</h3>
+         <p class="text1">The largest and the most beautiful falls of Wayanad, the Meenmutty Waterfalls plunges down from 
+          a height of 1,000 ft in three stages. Situated in the midst of a lush green forest, 
+          it requires a trek of about 2 km to reach this pristine falls.</p>
+            </div>
+            </div>
+            <div class="container">
+              <form method="POST" action="/waterfalls">
+          <div class="image">
+           <div class="text"><h2 class="color4">4.VAJRAI FALL</h2></div>
+           <div class="image-container3">
+            <input type="hidden" name="imgname" value="Vajrai fall">
+           <img class="d" src="https://www.placestovisitmaharashtra.com/wp-content/uploads/2017/06/Vajrai-waterfall.jpg">
+           <button id="likeButton4" type="submit" onclick="myalert()">
+            <span id="heartSymbol4">&#10084;</span> Like
+          </button>
+          <div id="message4"></div>
+      </div>
+    </form>
+            </div>
+            <div class="text">
+              <h3 class="h">MAHARASTRA</h3>
+              <p class="text1">Vajrai falls, also known as Bhambavli Vajrai falls, is at the height of approximately 260 metres.
+                 It is located in Western Maharashtra in the district of Satara. The waterfall is the origin of the River Urmodi.
+                 The waterfall declines in three steps from a vertical cliff.</p>
+              </div>
+               </div>
+              <div class="container">
+                <form method="POST" action="/waterfalls">
+              <div class="image">
+        <div class="text"><h2 class="color5">5.NOHKALIKAI FALL</h2></div>
+        <div class="image-container4">
+          <input type="hidden" name="imgname" value="Nohkalikai  fall">
+        <img   class="e"  src="https://www.indiaheritagewalks.org/sites/default/files/2019-02/Screenshot_20190228-112154~2.png">
+        <button id="likeButton5" type="submit" onclick="myalert()">
+          <span id="heartSymbol5">&#10084;</span> Like
+        </button>
+        <div id="message5"></div>
+      </div>
+    </form>
+        </div>
+          <div class="text">
+       <h3 class="h">MEGHALAYA</h3>
+       <P class="text1">she finally ran right off the edge of the plateau, plunging to her death,
+         unable to bear any longer the thought that she had unknowingly cannibalised her murdered daughter. 
+        The waterfall from which she leaped was named Nohkalikai Falls as a grim reminder of the tragedy that had befallen the unfortunate Ka Likai.</P>
+             </div>
+             </div>    
+             <div class="col-md-12 text-center">
+              <a href="/waterfallstable" target="_blank">
+              <button type="button" class="btn btn-primary">More about waterfalls</button</a></div> 
+                <script>
+                  const likeButton1 = document.getElementById("likeButton1");
+              const message1 = document.getElementById("message1");
+              
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+
+likeButton1.addEventListener("click", function() {
+  likeButton1.classList.toggle("liked");
+  if (likeButton1.classList.contains("liked")) {
+    message1.innerText = "Destination added to favourites!";
+  } else {
+    message1.innerText = "";
+  }
+});
+const likeButton2 = document.getElementById("likeButton2");
+const message2= document.getElementById("message2");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+
+likeButton2.addEventListener("click", function() {
+  likeButton2.classList.toggle("liked");
+  if (likeButton2.classList.contains("liked")) {
+    message2.innerText = "Destination added to favourites!";
+  } else {
+    message2.innerText = "";
+  }
+});
+const likeButton3 = document.getElementById("likeButton3");
+const message3= document.getElementById("message3");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+
+likeButton3.addEventListener("click", function() {
+  likeButton3.classList.toggle("liked");
+  if (likeButton3.classList.contains("liked")) {
+    message3.innerText = "Destination added to favourites!";
+  } else {
+    message3.innerText = "";
+  }
+});
+
+const likeButton4 = document.getElementById("likeButton4");
+const message4= document.getElementById("message4");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+
+likeButton4.addEventListener("click", function() {
+  likeButton4.classList.toggle("liked");
+  if (likeButton4.classList.contains("liked")) {
+    message4.innerText = "Destination added to favourites!";
+  } else {
+    message4.innerText = "";
+  }
+});
+const likeButton5 = document.getElementById("likeButton5");
+const message5= document.getElementById("message5");
+
+function myalert() {
+          alert("Destination added to favourites!");
+      }
+
+likeButton5.addEventListener("click", function() {
+  likeButton5.classList.toggle("liked");
+  if (likeButton5.classList.contains("liked")) {
+    message5.innerText = "Destination added to favourites!";
+  } else {
+    message5.innerText = "";
+  }
+});
+ </script>  
+                 </body>
+</html>
