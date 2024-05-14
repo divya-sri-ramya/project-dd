@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url('/static/dd2.jpg');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size:1550px 900px;
+   }
+      .container {
+        margin-top: 40px;
+        margin-left: 1400px;
+      }
+      .login-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+      }
+      .login-btn:hover {
+        background-color: #45a049;
+      }
+      
